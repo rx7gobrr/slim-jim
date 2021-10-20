@@ -1,0 +1,7 @@
+let Placeholder = sprites.create(assets.image`Test Sprite`, SpriteKind.Player)
+Placeholder.setPosition(5, 110)
+Placeholder.setStayInScreen(true)
+scene.cameraFollowSprite(Placeholder)
+scene.setBackgroundImage(assets.image`Test Background`)
+tiles.setTilemap(tilemap`Road Run level 1`)
+controller.moveSprite(Placeholder)
